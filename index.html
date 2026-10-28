@@ -3,47 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This website will launch on January 1st, 2027.">
-  <title>Launching January 1st, 2027</title>
+  <meta name="description" content="Deepa Holdings Ltd. launches January 1st, 2027. We are looking for an Office Manager. Contact us by phone or mail.">
+  <title>Launching January 1st, 2027 | Deepa Holdings Ltd.</title>
   <style>
     * { box-sizing: border-box; }
-    html, body { min-height: 100%; margin: 0; }
+
     body {
+      margin: 0;
       min-height: 100vh;
-      min-height: 100svh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: #101827;
       color: #f6f2ec;
       font-family: Arial, Helvetica, sans-serif;
       text-align: center;
-      padding: 24px;
+      padding: 28px 20px;
     }
-    main { width: 100%; max-width: 1050px; }
+
+    main {
+      width: 100%;
+      max-width: 1050px;
+    }
+
     h1 {
       margin: 0;
       font-size: clamp(2rem, 4.5vw, 4rem);
       font-weight: 700;
       line-height: 1.3;
     }
+
     .notice {
       margin-top: 38px;
       font-size: clamp(1rem, 1.55vw, 1.25rem);
       line-height: 1.6;
       color: #e7e4e1;
     }
+
     .notice p { margin: 8px 0; }
+
+    .contact {
+      margin-top: 28px;
+      font-size: clamp(0.95rem, 1.35vw, 1.1rem);
+      line-height: 1.75;
+      color: #e7e4e1;
+    }
+
+    .contact h2 {
+      margin: 0 0 8px;
+      font-size: 1.1em;
+      color: #f6f2ec;
+    }
+
+    .contact p { margin: 3px 0; }
+
+    a { color: #f6f2ec; text-underline-offset: 3px; }
+    a:hover, a:focus-visible { color: #d6e3ff; }
   </style>
 </head>
 <body>
   <main>
     <h1>This website will launch on January 1st 2027</h1>
-    <section class="notice" aria-label="Careers notice">
+
+    <section class="notice" aria-label="Employment opportunity">
       <p><strong>We are looking for an Office Manager.</strong></p>
-      <p>Interested in the position? Send us your resume.</p>
-      <!-- When ready, add your real email address here, e.g.:
-      <p>Email: <a href="mailto:YOUR_EMAIL">YOUR_EMAIL</a></p>
-      -->
+      <p>Interested in the position? Contact us using the number below.</p>
+    </section>
+
+    <section class="contact" aria-label="Contact information">
+      <h2>Contact Us</h2>
+      <p>Phone: <a href="tel:+12506188577">250-618-8577</a></p>
+      <p>Address: 6141 Washington Way</p>
     </section>
   </main>
 </body>
