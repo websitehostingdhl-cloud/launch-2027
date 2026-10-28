@@ -1,16 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website launching January 1, 2027. We are looking for an office manager.">
+  <title>Launching January 1, 2027</title>
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; min-height: 100dvh; display: grid; place-items: center; background: #101827; color: #fff; font-family: Arial, Helvetica, sans-serif; padding: 24px; }
-    h1 { font-size: clamp(1.7rem, 4vw, 3.5rem); font-weight: 600; text-align: center; line-height: 1.3; margin: 0; }
+    :root { color-scheme: light; --ink:#17263b; --muted:#586578; --accent:#1e6188; --line:#dce6ed; }
+    * { box-sizing:border-box; }
+    body { margin:0; min-height:100vh; display:grid; place-items:center; padding:28px; background:linear-gradient(140deg,#eaf3f8 0%,#f7fafc 56%,#edf3f6 100%); font-family:Arial,Helvetica,sans-serif; color:var(--ink); }
+    main { width:min(100%,680px); padding:clamp(32px,7vw,66px); background:white; border:1px solid var(--line); border-radius:22px; box-shadow:0 18px 55px rgba(21,52,79,.09); text-align:center; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.16em; color:var(--accent); font-size:12px; font-weight:700; }
+    h1 { margin:17px 0 22px; font-size:clamp(30px,5vw,47px); line-height:1.16; letter-spacing:-.035em; }
+    hr { border:0; border-top:1px solid var(--line); margin:34px 0; }
+    h2 { margin:0 0 10px; font-size:clamp(23px,4vw,29px); }
+    p { margin:0 0 19px; color:var(--muted); line-height:1.6; }
+    .contact { display:inline-block; padding:13px 24px; margin:3px 0 19px; background:var(--accent); border-radius:10px; color:#fff; text-decoration:none; font-weight:700; }
+    .contact:hover,.contact:focus-visible { background:#144d70; }
+    address { font-style:normal; color:var(--muted); line-height:1.55; }
+    address strong { color:var(--ink); }
   </style>
 </head>
 <body>
-  <h1>This website will launch on January 1st 2027</h1>
+  <main>
+    <div class="eyebrow">Coming Soon</div>
+    <h1>This website will launch on January 1st, 2027</h1>
+    <hr>
+    <h2>We're Looking for an Office Manager</h2>
+    <p>Interested in the position? Contact us to learn more.</p>
+    <a class="contact" href="tel:+12506188577">Contact Us: 250-618-8577</a>
+    <address><strong>Address</strong><br>6141 Washington Way</address>
+  </main>
 </body>
 </html>
